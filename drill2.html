@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Drill 2</title>
+
+    <style>
+        body {
+            background-image: url(https://images.pexels.com/photos/32549998/pexels-photo-32549998.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0.75rem;
+        background: white;
+    }
+
+    nav a {
+        color: #333;
+        font: 600 0.9rem Arial, sans-serif;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+    </style>
+</head>
+
+<nav>
+        <a href="index.html">Friends Club Checker</a>
+        <a href="skillstest.html">Element Checker</a>
+        <a href="meet.html">Meet The Creator</a>
+        <a href="drill2.html">Club Members</a>
+    </nav>
+
+<body>
+    <input id="first_name" placeholder="First Name">
+    <input id="last_name" placeholder="Last Name">
+    <button py-click="add_member">Add Member</button>
+    <div id="output" style="color: rgb(202, 203, 210);"></div>
+    <py-script src="drill2.py"></py-script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang  =  "en">
+<head>
+  <meta charset="UTF-8">
+  <title>Non-Metal Elements</title>
+  <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script  type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      color: rgb(223, 212, 212);
+      background-color: #eeeeee;
+      background-image: url(https://images.pexels.com/photos/29518215/pexels-photo-29518215.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+    }
+    .box {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #341711;
+      border: 2px solid rgb(0, 0, 0);
+    }
+    h1 {
+      text-align:  center;
+      margin-top: 0;
+    }
+    input, button {
+      font-size: 16px;
+      padding: 6px;
+    }
+    input {
+      width: 95%;
+    }
+    button {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    #result {
+      border: 1px solid rgb(223, 212, 212);
+      padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0.75rem;
+        background: white;
+    }
+
+    nav a {
+        color: #333;
+        font: 600 0.9rem Arial, sans-serif;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+  </style> 
+</head>
+
+<nav>
+        <a href="index.html">Friends Club Checker</a>
+        <a href="skillstest.html">Element Checker</a>
+        <a href="meet.html">Meet The Creator</a>
+        <a href="drill2.html">Club Members</a>
+    </nav>
+
+<body>
+
+  <div class="box">  
+    <h1>Non-Metal Elements</h1>
+    <p>Enter the symbol of a non-metal element (Example: H, O, Cl, Ne, Xe).</p>
+    <label  for="symbol">Element Symbol:</label><br>
+    <input id="symbol" type="text">
+    
+    <button py-click="search_element">Check Details</button>
+    <h2>Result</h2>
+    <div id="result">Results...</div>
+  </div>
+  
+  <script type="py" src="skillstest.py"></script>
+</body>
+</html>
